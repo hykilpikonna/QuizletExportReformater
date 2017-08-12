@@ -69,9 +69,9 @@
             this.buttonAutoSpace = new System.Windows.Forms.CheckBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.buttonSwitchCase = new System.Windows.Forms.CheckBox();
-            this.buttonUpperCase = new System.Windows.Forms.RadioButton();
             this.buttonLowerCase = new System.Windows.Forms.RadioButton();
+            this.buttonUpperCase = new System.Windows.Forms.RadioButton();
+            this.buttonSwitchCase = new System.Windows.Forms.CheckBox();
             this.label11 = new System.Windows.Forms.Label();
             this.buttonGithub = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
@@ -517,16 +517,17 @@
             this.panel6.Size = new System.Drawing.Size(184, 65);
             this.panel6.TabIndex = 16;
             // 
-            // buttonSwitchCase
+            // buttonLowerCase
             // 
-            this.buttonSwitchCase.AutoSize = true;
-            this.buttonSwitchCase.Location = new System.Drawing.Point(6, 0);
-            this.buttonSwitchCase.Name = "buttonSwitchCase";
-            this.buttonSwitchCase.Size = new System.Drawing.Size(86, 17);
-            this.buttonSwitchCase.TabIndex = 0;
-            this.buttonSwitchCase.Text = "大小写转换";
-            this.buttonSwitchCase.UseVisualStyleBackColor = true;
-            this.buttonSwitchCase.CheckedChanged += new System.EventHandler(this.buttonSwitchCase_CheckedChanged);
+            this.buttonLowerCase.AutoSize = true;
+            this.buttonLowerCase.Enabled = false;
+            this.buttonLowerCase.Location = new System.Drawing.Point(6, 41);
+            this.buttonLowerCase.Name = "buttonLowerCase";
+            this.buttonLowerCase.Size = new System.Drawing.Size(61, 17);
+            this.buttonLowerCase.TabIndex = 2;
+            this.buttonLowerCase.Text = "全小写";
+            this.buttonLowerCase.UseVisualStyleBackColor = true;
+            this.buttonLowerCase.CheckedChanged += new System.EventHandler(this.buttonLowerCase_CheckedChanged);
             // 
             // buttonUpperCase
             // 
@@ -542,17 +543,16 @@
             this.buttonUpperCase.UseVisualStyleBackColor = true;
             this.buttonUpperCase.CheckedChanged += new System.EventHandler(this.buttonUpperCase_CheckedChanged);
             // 
-            // buttonLowerCase
+            // buttonSwitchCase
             // 
-            this.buttonLowerCase.AutoSize = true;
-            this.buttonLowerCase.Enabled = false;
-            this.buttonLowerCase.Location = new System.Drawing.Point(6, 41);
-            this.buttonLowerCase.Name = "buttonLowerCase";
-            this.buttonLowerCase.Size = new System.Drawing.Size(61, 17);
-            this.buttonLowerCase.TabIndex = 2;
-            this.buttonLowerCase.Text = "全小写";
-            this.buttonLowerCase.UseVisualStyleBackColor = true;
-            this.buttonLowerCase.CheckedChanged += new System.EventHandler(this.buttonLowerCase_CheckedChanged);
+            this.buttonSwitchCase.AutoSize = true;
+            this.buttonSwitchCase.Location = new System.Drawing.Point(6, 0);
+            this.buttonSwitchCase.Name = "buttonSwitchCase";
+            this.buttonSwitchCase.Size = new System.Drawing.Size(86, 17);
+            this.buttonSwitchCase.TabIndex = 0;
+            this.buttonSwitchCase.Text = "大小写转换";
+            this.buttonSwitchCase.UseVisualStyleBackColor = true;
+            this.buttonSwitchCase.CheckedChanged += new System.EventHandler(this.buttonSwitchCase_CheckedChanged);
             // 
             // label11
             // 
@@ -574,6 +574,7 @@
             this.buttonGithub.TabIndex = 18;
             this.buttonGithub.Text = "Github";
             this.buttonGithub.UseVisualStyleBackColor = true;
+            this.buttonGithub.Click += new System.EventHandler(this.buttonGithub_Click);
             // 
             // Form1
             // 
